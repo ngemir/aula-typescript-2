@@ -5,7 +5,12 @@ export abstract class View<T> {
     
     //? = é uma caracteristica do typescript que diz que é opcional, e não funciona no primeiro parametro
     constructor(seletor: string, escapar?: boolean) {
-        this.elemento = document.querySelector(seletor) as HTMLElement;
+        const elemento = document.querySelector(seletor);
+        if (elemento) {
+            this.elemento = elemento as HTMLElement;
+        } else {
+            throw Error(`Seletor ${seletor} não existe no DOM, verifique com o desenvolvedor.`);
+        }
         if (escapar) {
             this.escapar = escapar;
         }
