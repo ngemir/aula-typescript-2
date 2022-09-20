@@ -1,5 +1,4 @@
 export class View {
-    //? = é uma caracteristica do typescript que diz que é opcional, e não funciona no primeiro parametro
     constructor(seletor, escapar) {
         this.escapar = false;
         this.elemento = document.querySelector(seletor);
