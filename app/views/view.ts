@@ -1,5 +1,8 @@
 export class View {
-    constructor(seletor) {
+
+    protected elemento: HTMLElement;
+
+    constructor(seletor: string) {
         this.elemento = document.querySelector(seletor);
     }
 }
