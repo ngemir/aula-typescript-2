@@ -1,7 +1,7 @@
 # aula-typescript-2
 2ª aula de typescript pela Alura
 
-## [Acesse aqui o site 🔗]()
+## [Acesse aqui o site 🔗](https://aula-typescript-2.vercel.app/)
 
 ## Qual o foco da aula?
 ### Criando a view 
